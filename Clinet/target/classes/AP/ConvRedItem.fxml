@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" prefHeight="50.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" cacheHint="SPEED" fill="#f0a6a6" height="43.0" layoutX="5.0" layoutY="4.0" stroke="#ead7d7" width="307.0">
+         <effect>
+            <Blend />
+         </effect>
+      </Rectangle>
+      <Label fx:id="timeLabel" layoutX="326.0" layoutY="8.0" prefHeight="34.0" prefWidth="127.0" text="time" textFill="#58c4f2">
+         <font>
+            <Font name="Cooper Black" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="textBox" layoutX="5.0" layoutY="8.0" prefHeight="34.0" prefWidth="308.0" text="message text">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AP.Controller.SendMessagePageController">
+   <children>
+      <ImageView fitHeight="147.0" fitWidth="533.0" layoutX="-7.0" layoutY="-5.0">
+         <image>
+            <Image url="file:/D:/project-gmail/images/mowj%20-%20Copy.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="97.0" layoutY="17.0" text="N" textFill="RED">
+         <font>
+            <Font name="Broadway" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="17.0" text="E" textFill="#fffb00">
+         <font>
+            <Font name="Broadway" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="17.0" text="W" textFill="#2100e5">
+         <font>
+            <Font name="Broadway" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="313.0" layoutY="17.0" text="S" textFill="#1100e0">
+         <font>
+            <Font name="Broadway" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="289.0" layoutY="17.0" text="S" textFill="#24d700">
+         <font>
+            <Font name="Broadway" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="17.0" text="E" textFill="#f2ff00">
+         <font>
+            <Font name="Broadway" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="17.0" text="M" textFill="RED">
+         <font>
+            <Font name="Broadway" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="337.0" layoutY="17.0" text="A" textFill="RED">
+         <font>
+            <Font name="Broadway" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="365.0" layoutY="17.0" text="G" textFill="#00ed0c">
+         <font>
+            <Font name="Broadway" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="396.0" layoutY="17.0" text="E" textFill="#e1ff00">
+         <font>
+            <Font name="Broadway" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="168.0" text="Recepient">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="224.0" text="subject">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="recepientField" layoutX="134.0" layoutY="162.0" prefHeight="40.0" prefWidth="369.0">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="subjectField" layoutX="112.0" layoutY="218.0" prefHeight="40.0" prefWidth="391.0" />
+      <TextArea fx:id="messageInput" layoutX="130.0" layoutY="278.0" prefHeight="311.0" prefWidth="369.0" promptText="Enter Your Message Here">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="attachButton" alignment="BASELINE_LEFT" layoutX="-66.0" layoutY="316.0" mnemonicParsing="false" onAction="#attachFile" onMouseEntered="#moveAttachRight" onMouseExited="#moveAttachLeft" prefHeight="59.0" prefWidth="117.0" style="-fx-background-color: #ffcade;" text="attach">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="emojiButton" alignment="BASELINE_LEFT" layoutX="-65.0" layoutY="404.0" mnemonicParsing="false" onAction="#showEmoji" onMouseEntered="#moveEmojiRight" onMouseExited="#moveEmojiLeft" prefHeight="59.0" prefWidth="117.0" style="-fx-background-color: #ffd691;" text="emoji">
+         <font>
+            <Font name="Comic Sans MS" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="sendButton" alignment="BASELINE_LEFT" layoutX="-65.0" layoutY="499.0" mnemonicParsing="false" onAction="#sendMessage" onMouseEntered="#moveSendRight" onMouseExited="#moveSendLeft" prefHeight="59.0" prefWidth="117.0" style="-fx-background-color: #afe0ff;" text="send">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="attachIcon" fitHeight="40.0" fitWidth="48.0" layoutY="326.0">
+         <image>
+            <Image url="file:/D:/project-gmail/images/attachment,%20attach%20files,%20clip%20files,%20documents%20icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="emojiIcon" fitHeight="40.0" fitWidth="41.0" layoutX="4.0" layoutY="414.0">
+         <image>
+            <Image url="file:/D:/project-gmail/images/d28e6c79afad015a8a6dd682d0550360.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sendIcon" fitHeight="40.0" fitWidth="41.0" layoutX="4.0" layoutY="509.0">
+         <image>
+            <Image url="file:/D:/project-gmail/images/69-512.png" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="42.0" layoutY="611.0" onAction="#returnToMainPanel" text="Click Here If You Want To Go Back To Main Panel!">
+         <font>
+            <Font name="Comic Sans MS Bold" size="17.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fx:id="emojiSet" fitHeight="40.0" fitWidth="345.0" layoutX="526.0" layoutY="549.0">
+         <image>
+            <Image url="file:/D:/project-gmail/images/emojiLine.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="367.0" layoutY="169.0" text="\@gmail.com" textFill="#747171">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="attachTypePane" layoutX="149.0" layoutY="361.0" prefHeight="111.0" prefWidth="334.0" style="-fx-background-color: #b3ffa0;" visible="false">
+         <children>
+            <Label layoutX="27.0" layoutY="22.0" text="select the type of the file you want to attach">
+               <font>
+                  <Font name="Lucida Bright" size="13.0" />
+               </font></Label>
+            <ImageView fitHeight="46.0" fitWidth="55.0" layoutX="39.0" layoutY="47.0" onMouseClicked="#attachPhoto">
+               <image>
+                  <Image url="file:/D:/project-gmail/images/Photo-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="55.0" layoutX="146.0" layoutY="47.0" onMouseClicked="#attachVideo">
+               <image>
+                  <Image url="file:/D:/project-gmail/images/401bacb05a711c6ceabcd9096b29ee1d-clapper.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="55.0" layoutX="242.0" layoutY="47.0" onMouseClicked="#attachMusic">
+               <image>
+                  <Image url="file:/D:/project-gmail/images/51EeJUmk+UL.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

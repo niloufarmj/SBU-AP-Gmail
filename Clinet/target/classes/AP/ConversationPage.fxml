@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="668.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AP.Controller.ConversationPageController">
+   <children>
+      <ImageView fitHeight="126.0" fitWidth="524.0">
+         <image>
+            <Image url="file:/D:/project-gmail/images/mowj%20-%20Copy.png" />
+         </image>
+         <effect>
+            <GaussianBlur radius="22.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="userPhoto" fitHeight="107.0" fitWidth="113.0" layoutX="351.0" layoutY="10.0">
+         <image>
+            <Image url="file:/D:/project-gmail/images/630729-200.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="userLabel" layoutX="14.0" layoutY="28.0" prefHeight="27.0" prefWidth="333.0" text="your conversation with : folani">
+         <font>
+            <Font name="Century Gothic" size="21.0" />
+         </font>
+      </Label>
+      <ListView fx:id="convListView" layoutX="30.0" layoutY="138.0" prefHeight="434.0" prefWidth="465.0" />
+      <Button alignment="BASELINE_LEFT" layoutX="85.0" layoutY="587.0" mnemonicParsing="false" onAction="#returnToPanel" prefHeight="54.0" prefWidth="163.0" style="-fx-background-color: #f5ff91;" text="Retrun">
+         <font>
+            <Font name="Imprint MT Shadow" size="21.0" />
+         </font>
+      </Button>
+      <Button alignment="BASELINE_LEFT" layoutX="293.0" layoutY="587.0" mnemonicParsing="false" onAction="#sendMail" prefHeight="54.0" prefWidth="178.0" style="-fx-background-color: #f5ff91;" text="Send new mail">
+         <font>
+            <Font name="Imprint MT Shadow" size="23.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="27.0" fitWidth="43.0" layoutX="189.0" layoutY="600.0">
+         <image>
+            <Image url="file:/D:/project-gmail/images/img_159447.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.35" contrast="0.02" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
